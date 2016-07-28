@@ -49,6 +49,8 @@ public class MyButton extends RelativeLayout {
 
             mTextView.setText(text);
             mImageView.setImageResource(src);
+
+            a.recycle();
         }
     }
 
