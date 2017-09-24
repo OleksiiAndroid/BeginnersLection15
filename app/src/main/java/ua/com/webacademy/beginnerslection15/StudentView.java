@@ -33,11 +33,15 @@ public class StudentView extends LinearLayout {
     }
 
     public void setStudent(Student student) {
-        this.mStudent = student;
+        clean();
 
-        mEditTextFirstName.setText(this.mStudent.FirstName);
-        mEditTextLastName.setText(this.mStudent.LastName);
-        mEditTextAge.setText(String.valueOf(this.mStudent.Age));
+        if (student != null) {
+            this.mStudent = student;
+
+            mEditTextFirstName.setText(mStudent.FirstName);
+            mEditTextLastName.setText(mStudent.LastName);
+            mEditTextAge.setText(String.valueOf(mStudent.Age));
+        }
     }
 
     public Student getStudent() {
@@ -48,7 +52,15 @@ public class StudentView extends LinearLayout {
         return this.mStudent;
     }
 
+    public void clean() {
+        mStudent = null;
+
+        mEditTextFirstName.setText(null);
+        mEditTextLastName.setText(null);
+        mEditTextAge.setText(null);
+    }
+
     public boolean validate() {
-        return mEditTextFirstName.validate() && mEditTextLastName.validate() && mEditTextAge.validate();
+        return mEditTextFirstName.validate() & mEditTextLastName.validate() & mEditTextAge.validate();
     }
 }

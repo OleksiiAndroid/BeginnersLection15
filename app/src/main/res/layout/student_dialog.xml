@@ -4,7 +4,7 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <ua.com.webacademy.beginners.lection13.StudentView
+    <ua.com.webacademy.beginnerslection15.StudentView
         android:id="@+id/viewStudent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

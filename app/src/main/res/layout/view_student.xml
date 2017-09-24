@@ -5,21 +5,21 @@
               android:layout_height="match_parent"
               android:orientation="vertical">
 
-    <ua.com.webacademy.beginners.lection13.RequiredEditText
+    <ua.com.webacademy.beginnerslection15.RequiredEditText
         android:id="@+id/firstName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="First name"
         app:required="true"/>
 
-    <ua.com.webacademy.beginners.lection13.RequiredEditText
+    <ua.com.webacademy.beginnerslection15.RequiredEditText
         android:id="@+id/lastName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Last name"
         app:required="true"/>
 
-    <ua.com.webacademy.beginners.lection13.RequiredEditText
+    <ua.com.webacademy.beginnerslection15.RequiredEditText
         android:id="@+id/age"
         android:layout_width="100dp"
         android:layout_height="wrap_content"

@@ -1,5 +1,6 @@
 package ua.com.webacademy.beginnerslection15;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -68,12 +69,21 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button:
                 requiredEditText.validate();
 
-                if(requiredEditText.validate()){
+                if (requiredEditText.validate()) {
                     Toast.makeText(MainActivity.this, requiredEditText.getText(), Toast.LENGTH_SHORT).show();
                 }
                 break;
             case R.id.button2:
                 validate();
+                break;
+            case R.id.buttonOrientation1:
+                startActivity(new Intent(this, Orientation1Activity.class));
+                break;
+            case R.id.buttonOrientation2:
+                startActivity(new Intent(this, Orientation1Activity.class));
+                break;
+            case R.id.buttonOrientation3:
+                startActivity(new Intent(this, Orientation1Activity.class));
                 break;
         }
     }
